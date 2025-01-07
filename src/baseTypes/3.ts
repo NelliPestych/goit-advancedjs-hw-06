@@ -1,6 +1,14 @@
-let some:unknown;
+let some: unknown;
 some = 'Text';
 let str: string;
-str = some;
+
+// Перевірка типу
+if (typeof some === 'string') {
+    str = some;
+}
+
+// Або через явне приведення типу
+str = some as string;
+
 
 export {};
